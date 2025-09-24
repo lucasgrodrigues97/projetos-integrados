@@ -1,10 +1,9 @@
 # Projeto Infraestrutura + CI/CD (com Docker + AWS EC2 exemplo)
 
 Este repositório é um template para sua entrega. Ele contém:
-- `docs/` → Diagramas do C4 Model (contexto, container, componente, classe, deployment).
 - `Dockerfile` → Exemplo de Dockerfile para uma aplicação frontend (React) ou static site.
 - `infra/terraform/` → Scripts Terraform para provisionar recursos AWS (ECR, Security Group, EC2).
-- `.github/workflows/ci.yml` → Workflow que:
+- `workflows/ci.yml` → Workflow que:
   1. Constrói uma imagem Docker e envia para Amazon ECR.
   2. Executa checks Terraform (fmt/validate/plan) e aplica na branch `main` (se configurado).
 
@@ -26,4 +25,3 @@ terraform apply -auto-approve
 - Este repositório é um **exemplo educacional**. Em produção você deve adicionar:
   - Gerenciamento de chaves/roles (IAM roles para instâncias puxarem imagens do ECR).
   - RDS (MySQL) e Security Groups refinados.
-  - Módulos Terraform, state remoto (S3 + DynamoDB) e variáveis sensíveis via secrets.
