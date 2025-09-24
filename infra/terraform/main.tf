@@ -30,7 +30,7 @@ variable "key_name" {
 
 # ECR repository to store docker images (exemplo)
 resource "aws_ecr_repository" "app" {
-  name                 = "c4model-app-repo"
+  name                 = "ecr-app-repo"
   image_tag_mutability = "MUTABLE"
 }
 

@@ -1,4 +1,4 @@
-# Projeto Infraestrutura + CI/CD (com Docker + AWS EC2 exemplo)
+# Projeto Infraestrutura + CI/CD (com Docker + AWS EC2)
 
 Este repositório é um template para sua entrega. Ele contém:
 - `Dockerfile` → Exemplo de Dockerfile para uma aplicação frontend (React) ou static site.
@@ -11,7 +11,7 @@ Este repositório é um template para sua entrega. Ele contém:
 - `AWS_ACCESS_KEY_ID` e `AWS_SECRET_ACCESS_KEY` → credenciais com permissão para ECR, EC2 e IAM se necessário.
 - `AWS_REGION` → ex: `us-east-1`.
 - `AWS_ACCOUNT_ID` → número da conta AWS (usado para formar o URI do ECR).
-- `ECR_REPOSITORY_NAME` → nome do repo ECR (ex: `c4model-app-repo`).
+- `ECR_REPOSITORY_NAME` → nome do repo ECR (ex: `ecr-app-repo`).
 
 ## Como usar localmente (Terraform)
 ```bash
